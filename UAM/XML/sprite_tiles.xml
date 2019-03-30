@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<gfx-xform version="SINGLE_TS">
+ <input file="/non-web/Uzebox/MARIOBROS2018/UAM/IMG/sprite_tiles.png" type="png" tile-width="8" tile-height="8" />
+ <output file="UAM/PROGMEM/sprite_tiles_progmem.inc">
+ <tiles var-name="sprite_tiles" tilesetOutputTo="PROGMEM" removeDupeTiles="1" />
+ <maps pointers-size="8">
+  <map var-name="blackTile" left="1" top="0" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="marioJump" left="2" top="2" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="marioIdle" left="4" top="2" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="marioRunF1" left="6" top="2" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="marioRunF2" left="8" top="2" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="marioStop" left="10" top="2" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="luigiJump" left="2" top="6" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="luigiIdle" left="4" top="6" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="luigiRunF1" left="6" top="6" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="luigiRunF2" left="8" top="6" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="luigiStop" left="10" top="6" width="1" height="3" mapOutputTo="PROGMEM" />
+  <map var-name="shellscrapperF1" left="12" top="4" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="shellscrapperF2" left="14" top="4" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="shellscrapperF3" left="16" top="4" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="sidestepperF1" left="12" top="7" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="sidestepperF2" left="14" top="7" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="fighterflyF1" left="18" top="3" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="fighterflyF2" left="20" top="3" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="fighterflyF3" left="22" top="3" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="fighterflyF4" left="24" top="3" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="slipiceF1" left="18" top="7" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="slipiceF2" left="20" top="7" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="slipiceF3" left="22" top="7" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="slipiceF4" left="24" top="7" width="1" height="2" mapOutputTo="PROGMEM" />
+  <map var-name="bonusWafferF1" left="2" top="10" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="bonusWafferF2" left="4" top="10" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="coinF1" left="2" top="12" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="coinF2" left="4" top="12" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="fireballF1" left="18" top="10" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="fireballF2" left="20" top="10" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="fireballF3" left="22" top="10" width="1" height="1" mapOutputTo="PROGMEM" />
+  <map var-name="fireballF4" left="24" top="10" width="1" height="1" mapOutputTo="PROGMEM" />
+ </maps>
+ </output>
+</gfx-xform>

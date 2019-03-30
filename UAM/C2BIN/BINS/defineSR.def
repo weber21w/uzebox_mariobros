@@ -1,0 +1,7 @@
+// C2BIN DEFINITIONS: SPI RAM (BINS/defineSR.def) 
+
+
+
+// ***** SECTION OFFSETS *****
+#define offset_music         0 
+#define offset_gamesave      0 

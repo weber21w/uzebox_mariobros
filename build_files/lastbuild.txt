@@ -1,0 +1,15 @@
+
+
+Sun Dec 23 23:10:14 EST 2018
+MARIOBROS2018
+AVR Memory Usage
+----------------
+Device: atmega644
+
+Program:   31824 bytes (48.6% Full)
+(.text + .data + .bootloader)
+
+Data:       3567 bytes (87.1% Full)
+(.data + .bss + .noinit)
+
+
