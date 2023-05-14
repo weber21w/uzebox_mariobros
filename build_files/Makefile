@@ -51,8 +51,7 @@ KERNEL_OPTIONS += -DUART=0                   # UART.
 
 # Music options.
 KERNEL_OPTIONS += -DMUSIC_ENGINE=STREAM      # Use the streaming music engine.
-KERNEL_OPTIONS += -DSONG_BUFFER_SIZE=16      # Set the ram buffer size for the music data.
-KERNEL_OPTIONS += -DSTREAM_MUSIC_RAM=1       # Indicate where the music data will be sourced from. (1=ram, 0=flash.)
+KERNEL_OPTIONS += -DSTREAM_MUSIC_RAM=0       # Indicate where the music data will be sourced from. (1=ram, 0=flash.)
 KERNEL_OPTIONS += -DSOUND_MIXER=1            #
 KERNEL_OPTIONS += -DSONG_SPEED=1             #
 KERNEL_OPTIONS += -DSOUND_CHANNEL_5_ENABLE=0 #
@@ -121,7 +120,25 @@ OBJECTS +=  $(GAME).o
 LINKONLYOBJECTS =
 
 ## Build
-all: cleanit $(TARGET) $(GAME).hex $(GAME).eep $(GAME).lss $(GAME).uze size send cleanit2
+all: cleanit ../src/assets/song1.inc ../src/assets/song2.inc ../src/assets/song3.inc ../src/assets/song4.inc ../src/assets/song6.inc ../src/assets/song7.inc $(TARGET) $(GAME).hex $(GAME).eep $(GAME).lss $(GAME).uze size send cleanit2
+
+../src/assets/song1.inc: ../src/assets/1.mid
+	$(UZEBIN_DIR)midiconv ../src/assets/1.mid ../src/assets/song1.inc -vsong1
+
+../src/assets/song2.inc: ../src/assets/2.mid
+	$(UZEBIN_DIR)midiconv ../src/assets/2.mid ../src/assets/song2.inc -vsong2
+
+../src/assets/song3.inc: ../src/assets/3.mid
+	$(UZEBIN_DIR)midiconv ../src/assets/3.mid ../src/assets/song3.inc -vsong3
+
+../src/assets/song4.inc: ../src/assets/4.mid
+	$(UZEBIN_DIR)midiconv ../src/assets/4.mid ../src/assets/song4.inc -vsong4
+
+../src/assets/song6.inc: ../src/assets/6.mid
+	$(UZEBIN_DIR)midiconv ../src/assets/6.mid ../src/assets/song6.inc -vsong6
+
+../src/assets/song7.inc: ../src/assets/7.mid
+	$(UZEBIN_DIR)midiconv ../src/assets/7.mid ../src/assets/song7.inc -vsong7
 
 ## Compile Kernel files
 uzeboxVideoEngineCore.o: $(KERNEL_DIR)/uzeboxVideoEngineCore.s
