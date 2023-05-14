@@ -140,6 +140,9 @@ all: cleanit ../src/assets/song1.inc ../src/assets/song2.inc ../src/assets/song3
 ../src/assets/song7.inc: ../src/assets/7.mid
 	$(UZEBIN_DIR)midiconv ../src/assets/7.mid ../src/assets/song7.inc -vsong7
 
+../src/assets/music.inc: ../src/assets/compress-music.cfg
+	$(UZEBIN_DIR)mconvert ../src/assets/compress-music.cfg
+
 ## Compile Kernel files
 uzeboxVideoEngineCore.o: $(KERNEL_DIR)/uzeboxVideoEngineCore.s
 	$(CC) $(INCLUDES) $(ASMFLAGS) -c  $<
